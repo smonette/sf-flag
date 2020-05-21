@@ -1,0 +1,82 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.flag-container {
+  height: 400px;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 60px solid gold;
+  padding: 20px;
+
+  position: relative;
+}
+.image-container {
+  position: relative;
+  background: url(
+      https://cdn.glitch.com/4b6f451b-f61a-46d3-85b3-cc03518ce2d6%2FFlag_of_San_Francisco.svg.png?v=1588272524523
+    )center center no-repeat;
+  background-size: contain;
+  height: 80%;
+  width: 100%;
+}
+.banner-container {
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    height: 75px;
+}
+.banner-piece {
+    text-transform: uppercase;
+    color: gold;
+    text-align: center;
+    max-width: 120px;
+    overflow:hidden;
+    white-space: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+}
+
+.banner-piece:first-child,
+.banner-piece:last-child {
+  width: 100%;
+  max-width:95px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.banner-piece:first-child {
+    left: 5px;
+    transform: rotate(-3deg)
+}
+
+.banner-piece:last-child {
+  right: 5px;
+  transform: rotate(3deg);
+}
+
+
+.city-text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: navy;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
